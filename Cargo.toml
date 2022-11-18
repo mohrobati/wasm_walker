@@ -10,5 +10,10 @@ wasmparser = "0.93.0"
 wast = "48.0.0"
 wat = "1.0.50"
 anyhow = "1.0.58"
-serde = "1.0.147"
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0.79"
+
+[patch.crates-io]
+wasmparser = { path = "./wasm-tools/crates/wasmparser/" }
+wast = { path = "./wasm-tools/crates/wast/" }
+wat = { path = "./wasm-tools/crates/wat/" }
