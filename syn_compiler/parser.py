@@ -75,7 +75,7 @@ class Parser:
     def p_enum_atomic(self, p):
         """enum : atomic LRB entity_list RRB"""
         p[0] = NonTerminal()
-        p[0].value = {p[1]: p[3].value}
+        p[0].value = {p[1].value: p[3].value}
 
     def p_enum_no_atomic(self, p):
         """enum : LRB entity_list RRB"""
@@ -85,7 +85,7 @@ class Parser:
     def p_struct_atomic(self, p):
         """struct : atomic LCB field_list RCB"""
         p[0] = NonTerminal()
-        p[0].value = {p[1]: p[3].value}
+        p[0].value = {p[1].value: p[3].value}
 
     def p_struct_no_atomic(self, p):
         """struct : LCB field_list RCB"""
@@ -95,7 +95,7 @@ class Parser:
     def p_array_atomic(self, p):
         """array : atomic LSB entity_list RSB"""
         p[0] = NonTerminal()
-        p[0].value = {p[1]: p[3].value}
+        p[0].value = {p[1].value: p[3].value}
 
     def p_array_no_atomic(self, p):
         """array : LSB entity_list RSB"""

@@ -1,0 +1,247 @@
+{
+  "Module": {
+    "Module": {
+      "span": {
+        "Span": {
+          "offset": "1"
+        }
+      },
+      "id": "None",
+      "name": "None",
+      "kind": {
+        "Text": [
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "11"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": null,
+                      "results": "I32"
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "46"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": [
+                        "None",
+                        "None",
+                        "I32",
+                        "None",
+                        "None",
+                        "I32"
+                      ],
+                      "results": "I32"
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Func": {
+              "Func": {
+                "span": {
+                  "Span": {
+                    "offset": "97"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "exports": {
+                  "InlineExport": {
+                    "names": null
+                  }
+                },
+                "kind": {
+                  "Inline": {
+                    "locals": null,
+                    "expression": {
+                      "Expression": {
+                        "instrs": [
+                          {
+                            "Block": {
+                              "BlockType": {
+                                "label": "None",
+                                "label_name": "None",
+                                "ty": {
+                                  "TypeUse": {
+                                    "index": "None",
+                                    "inline": {
+                                      "Some": {
+                                        "FunctionType": {
+                                          "params": null,
+                                          "results": "I32"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "Loop": {
+                              "BlockType": {
+                                "label": "None",
+                                "label_name": "None",
+                                "ty": {
+                                  "TypeUse": {
+                                    "index": "None",
+                                    "inline": {
+                                      "Some": {
+                                        "FunctionType": {
+                                          "params": null,
+                                          "results": "I32"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "LocalGet": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "241"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "LocalGet": {
+                              "Num": [
+                                "1",
+                                {
+                                  "Span": {
+                                    "offset": "261"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "BrIf": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "277"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "Br": {
+                              "Num": [
+                                "1",
+                                {
+                                  "Span": {
+                                    "offset": "297"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "End": "None"
+                          },
+                          {
+                            "End": "None"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ty": {
+                  "TypeUse": {
+                    "index": {
+                      "Some": {
+                        "Num": [
+                          "1",
+                          {
+                            "Span": {
+                              "offset": "114"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "inline": {
+                      "Some": {
+                        "FunctionType": {
+                          "params": [
+                            "None",
+                            "None",
+                            "I32",
+                            "None",
+                            "None",
+                            "I32"
+                          ],
+                          "results": "I32"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Export": {
+              "Export": {
+                "span": {
+                  "Span": {
+                    "offset": "328"
+                  }
+                },
+                "name": "\"main\"",
+                "kind": "Func",
+                "item": {
+                  "Num": [
+                    "0",
+                    {
+                      "Span": {
+                        "offset": "348"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

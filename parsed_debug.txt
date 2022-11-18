@@ -1,7 +1,7 @@
 Module(
     Module {
         span: Span {
-            offset: 6,
+            offset: 1,
         },
         id: None,
         name: None,
@@ -10,7 +10,7 @@ Module(
                 Type(
                     Type {
                         span: Span {
-                            offset: 20,
+                            offset: 11,
                         },
                         id: None,
                         name: None,
@@ -25,14 +25,41 @@ Module(
                         parent: None,
                     },
                 ),
+                Type(
+                    Type {
+                        span: Span {
+                            offset: 46,
+                        },
+                        id: None,
+                        name: None,
+                        def: Func(
+                            FunctionType {
+                                params: [
+                                    (
+                                        None,
+                                        None,
+                                        I32,
+                                    ),
+                                    (
+                                        None,
+                                        None,
+                                        I32,
+                                    ),
+                                ],
+                                results: [
+                                    I32,
+                                ],
+                            },
+                        ),
+                        parent: None,
+                    },
+                ),
                 Func(
                     Func {
                         span: Span {
-                            offset: 59,
+                            offset: 97,
                         },
-                        id: Some(
-                            "main",
-                        ),
+                        id: None,
                         name: None,
                         exports: InlineExport {
                             names: [],
@@ -76,20 +103,26 @@ Module(
                                         },
                                     ),
                                     LocalGet(
-                                        Id(
-                                            "lhs",
+                                        Num(
+                                            0,
+                                            Span {
+                                                offset: 241,
+                                            },
                                         ),
                                     ),
                                     LocalGet(
-                                        Id(
-                                            "rhs",
+                                        Num(
+                                            1,
+                                            Span {
+                                                offset: 261,
+                                            },
                                         ),
                                     ),
                                     BrIf(
                                         Num(
                                             0,
                                             Span {
-                                                offset: 274,
+                                                offset: 277,
                                             },
                                         ),
                                     ),
@@ -97,7 +130,7 @@ Module(
                                         Num(
                                             1,
                                             Span {
-                                                offset: 298,
+                                                offset: 297,
                                             },
                                         ),
                                     ),
@@ -111,21 +144,24 @@ Module(
                             },
                         },
                         ty: TypeUse {
-                            index: None,
+                            index: Some(
+                                Num(
+                                    1,
+                                    Span {
+                                        offset: 114,
+                                    },
+                                ),
+                            ),
                             inline: Some(
                                 FunctionType {
                                     params: [
                                         (
-                                            Some(
-                                                "lhs",
-                                            ),
+                                            None,
                                             None,
                                             I32,
                                         ),
                                         (
-                                            Some(
-                                                "rhs",
-                                            ),
+                                            None,
                                             None,
                                             I32,
                                         ),
@@ -141,12 +177,15 @@ Module(
                 Export(
                     Export {
                         span: Span {
-                            offset: 348,
+                            offset: 328,
                         },
                         name: "main",
                         kind: Func,
-                        item: Id(
-                            "main",
+                        item: Num(
+                            0,
+                            Span {
+                                offset: 348,
+                            },
                         ),
                     },
                 ),
