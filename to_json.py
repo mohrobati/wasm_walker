@@ -3,7 +3,8 @@ from syn_compiler.parser import Parser
 import os
 import glob
 
-for filename in glob.glob('./*.wasm', recursive=True):
+# for filename in glob.glob('./*.wasm', recursive=True):
+for filename in [glob.glob('./test/abcm2ps/**/music.o', recursive=True)[0]]:
     os.system("cargo run " + filename)
     f_debug = open("./parsed_debug.txt", "r")
     input = f_debug.read()

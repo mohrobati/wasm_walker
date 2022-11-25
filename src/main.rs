@@ -2,7 +2,7 @@ extern crate wabt;
 use wast::parser::{self, ParseBuffer};
 use wast::Wat;
 use std::fs;
-use wabt::wasm2wat;
+use wabt::{Features, wasm2wat_with_features};
 use std::fs::File;
 use std::io::Read;
 use std::env;
@@ -18,7 +18,9 @@ fn get_file_as_byte_vec(filename: &String) -> Vec<u8> {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let wat:String = wasm2wat(get_file_as_byte_vec(&args[1])).unwrap();
+    let mut features = Features::new();
+    features.enable_all();
+    let wat:String = wasm2wat_with_features(get_file_as_byte_vec(&args[1]), features).unwrap();
     let buf = ParseBuffer::new(&wat[..]).unwrap();
     let _ast = parser::parse::<wast::Wat>(&buf).unwrap();
     fs::write("./parsed_debug.txt", format!("{_ast:#?}")).expect("Unable to write file");
