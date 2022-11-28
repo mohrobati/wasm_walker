@@ -15,3 +15,7 @@ Cargo.lock
 
 wabt/
 wasm-tools/
+benchmark/
+__pycache__/
+projects/
+target/

@@ -1,0 +1,831 @@
+{
+  "Module": {
+    "Module": {
+      "span": {
+        "Span": {
+          "offset": "1"
+        }
+      },
+      "id": "None",
+      "name": "None",
+      "kind": {
+        "Text": [
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "11"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": null,
+                      "results": null
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "33"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": [
+                        "None",
+                        "None",
+                        "I32",
+                        "None",
+                        "None",
+                        "I32"
+                      ],
+                      "results": "I32"
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "84"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": [
+                        "None",
+                        "None",
+                        "I32"
+                      ],
+                      "results": "I32"
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Type": {
+              "Type": {
+                "span": {
+                  "Span": {
+                    "offset": "131"
+                  }
+                },
+                "id": "None",
+                "name": "None",
+                "def": {
+                  "Func": {
+                    "FunctionType": {
+                      "params": [
+                        "None",
+                        "None",
+                        "I32"
+                      ],
+                      "results": null
+                    }
+                  }
+                },
+                "parent": "None"
+              }
+            }
+          },
+          {
+            "Import": {
+              "Import": {
+                "span": {
+                  "Span": {
+                    "offset": "165"
+                  }
+                },
+                "module": "\"env\"",
+                "field": "\"__linear_memory\"",
+                "item": {
+                  "ItemSig": {
+                    "span": {
+                      "Span": {
+                        "offset": "197"
+                      }
+                    },
+                    "id": "None",
+                    "name": "None",
+                    "kind": {
+                      "Memory": {
+                        "B32": {
+                          "limits": {
+                            "Limits": {
+                              "min": "1",
+                              "max": "None"
+                            }
+                          },
+                          "shared": "false"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Import": {
+              "Import": {
+                "span": {
+                  "Span": {
+                    "offset": "217"
+                  }
+                },
+                "module": "\"env\"",
+                "field": "\"ATS_2d0_2e2_2e11_2src_2ats_array_2esats__staload\"",
+                "item": {
+                  "ItemSig": {
+                    "span": {
+                      "Span": {
+                        "offset": "282"
+                      }
+                    },
+                    "id": "None",
+                    "name": "None",
+                    "kind": {
+                      "Func": {
+                        "TypeUse": {
+                          "index": {
+                            "Some": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "299"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "inline": "None"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Import": {
+              "Import": {
+                "span": {
+                  "Span": {
+                    "offset": "307"
+                  }
+                },
+                "module": "\"env\"",
+                "field": "\"ats_malloc_gc\"",
+                "item": {
+                  "ItemSig": {
+                    "span": {
+                      "Span": {
+                        "offset": "337"
+                      }
+                    },
+                    "id": "None",
+                    "name": "None",
+                    "kind": {
+                      "Func": {
+                        "TypeUse": {
+                          "index": {
+                            "Some": {
+                              "Num": [
+                                "2",
+                                {
+                                  "Span": {
+                                    "offset": "354"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "inline": "None"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Import": {
+              "Import": {
+                "span": {
+                  "Span": {
+                    "offset": "362"
+                  }
+                },
+                "module": "\"env\"",
+                "field": "\"ats_free_gc\"",
+                "item": {
+                  "ItemSig": {
+                    "span": {
+                      "Span": {
+                        "offset": "390"
+                      }
+                    },
+                    "id": "None",
+                    "name": "None",
+                    "kind": {
+                      "Func": {
+                        "TypeUse": {
+                          "index": {
+                            "Some": {
+                              "Num": [
+                                "3",
+                                {
+                                  "Span": {
+                                    "offset": "407"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "inline": "None"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Import": {
+              "Import": {
+                "span": {
+                  "Span": {
+                    "offset": "415"
+                  }
+                },
+                "module": "\"env\"",
+                "field": "\"__stack_pointer\"",
+                "item": {
+                  "ItemSig": {
+                    "span": {
+                      "Span": {
+                        "offset": "447"
+                      }
+                    },
+                    "id": "None",
+                    "name": "None",
+                    "kind": {
+                      "Global": {
+                        "GlobalType": {
+                          "ty": "I32",
+                          "mutable": "true"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Func": {
+              "Func": {
+                "span": {
+                  "Span": {
+                    "offset": "475"
+                  }
+                },
+                "id": {
+                  "Some": "\"ATS_2d0_2e2_2e11_2src_2ats_array_2edats__staload\""
+                },
+                "name": "None",
+                "exports": {
+                  "InlineExport": {
+                    "names": null
+                  }
+                },
+                "kind": {
+                  "Inline": {
+                    "locals": null,
+                    "expression": {
+                      "Expression": {
+                        "instrs": [
+                          {
+                            "Block": {
+                              "BlockType": {
+                                "label": "None",
+                                "label_name": "None",
+                                "ty": {
+                                  "TypeUse": {
+                                    "index": "None",
+                                    "inline": "None"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "I32Const": "0"
+                          },
+                          {
+                            "I32Load8u": {
+                              "MemArg": {
+                                "align": "1",
+                                "offset": "0",
+                                "memory": {
+                                  "Num": [
+                                    "0",
+                                    {
+                                      "Span": {
+                                        "offset": "588"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "BrIf": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "612"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "I32Const": "0"
+                          },
+                          {
+                            "I32Const": "1"
+                          },
+                          {
+                            "I32Store8": {
+                              "MemArg": {
+                                "align": "1",
+                                "offset": "0",
+                                "memory": {
+                                  "Num": [
+                                    "0",
+                                    {
+                                      "Span": {
+                                        "offset": "663"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "Call": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "685"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "End": "None"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ty": {
+                  "TypeUse": {
+                    "index": {
+                      "Some": {
+                        "Num": [
+                          "0",
+                          {
+                            "Span": {
+                              "offset": "536"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "inline": "None"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Func": {
+              "Func": {
+                "span": {
+                  "Span": {
+                    "offset": "699"
+                  }
+                },
+                "id": {
+                  "Some": "\"ATS_2d0_2e2_2e11_2src_2ats_array_2edats__dynload\""
+                },
+                "name": "None",
+                "exports": {
+                  "InlineExport": {
+                    "names": null
+                  }
+                },
+                "kind": {
+                  "Inline": {
+                    "locals": null,
+                    "expression": {
+                      "Expression": {
+                        "instrs": [
+                          {
+                            "I32Const": "0"
+                          },
+                          {
+                            "I32Const": "1"
+                          },
+                          {
+                            "I32Store": {
+                              "MemArg": {
+                                "align": "4",
+                                "offset": "0",
+                                "memory": {
+                                  "Num": [
+                                    "0",
+                                    {
+                                      "Span": {
+                                        "offset": "799"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "Block": {
+                              "BlockType": {
+                                "label": "None",
+                                "label_name": "None",
+                                "ty": {
+                                  "TypeUse": {
+                                    "index": "None",
+                                    "inline": "None"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "I32Const": "0"
+                          },
+                          {
+                            "I32Load8u": {
+                              "MemArg": {
+                                "align": "1",
+                                "offset": "0",
+                                "memory": {
+                                  "Num": [
+                                    "0",
+                                    {
+                                      "Span": {
+                                        "offset": "858"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "BrIf": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "882"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "I32Const": "0"
+                          },
+                          {
+                            "I32Const": "1"
+                          },
+                          {
+                            "I32Store8": {
+                              "MemArg": {
+                                "align": "1",
+                                "offset": "0",
+                                "memory": {
+                                  "Num": [
+                                    "0",
+                                    {
+                                      "Span": {
+                                        "offset": "933"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "Call": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "955"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "End": "None"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ty": {
+                  "TypeUse": {
+                    "index": {
+                      "Some": {
+                        "Num": [
+                          "0",
+                          {
+                            "Span": {
+                              "offset": "760"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "inline": "None"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Func": {
+              "Func": {
+                "span": {
+                  "Span": {
+                    "offset": "969"
+                  }
+                },
+                "id": {
+                  "Some": "\"ats_array_ptr_alloc_tsz\""
+                },
+                "name": "None",
+                "exports": {
+                  "InlineExport": {
+                    "names": null
+                  }
+                },
+                "kind": {
+                  "Inline": {
+                    "locals": null,
+                    "expression": {
+                      "Expression": {
+                        "instrs": [
+                          {
+                            "LocalGet": {
+                              "Num": [
+                                "1",
+                                {
+                                  "Span": {
+                                    "offset": "1051"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "LocalGet": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "1067"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "I32Mul",
+                          {
+                            "Call": {
+                              "Num": [
+                                "1",
+                                {
+                                  "Span": {
+                                    "offset": "1090"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ty": {
+                  "TypeUse": {
+                    "index": {
+                      "Some": {
+                        "Num": [
+                          "1",
+                          {
+                            "Span": {
+                              "offset": "1005"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "inline": {
+                      "Some": {
+                        "FunctionType": {
+                          "params": [
+                            "None",
+                            "None",
+                            "I32",
+                            "None",
+                            "None",
+                            "I32"
+                          ],
+                          "results": "I32"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Func": {
+              "Func": {
+                "span": {
+                  "Span": {
+                    "offset": "1096"
+                  }
+                },
+                "id": {
+                  "Some": "\"ats_array_ptr_free\""
+                },
+                "name": "None",
+                "exports": {
+                  "InlineExport": {
+                    "names": null
+                  }
+                },
+                "kind": {
+                  "Inline": {
+                    "locals": null,
+                    "expression": {
+                      "Expression": {
+                        "instrs": [
+                          {
+                            "LocalGet": {
+                              "Num": [
+                                "0",
+                                {
+                                  "Span": {
+                                    "offset": "1156"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "Call": {
+                              "Num": [
+                                "2",
+                                {
+                                  "Span": {
+                                    "offset": "1167"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "ty": {
+                  "TypeUse": {
+                    "index": {
+                      "Some": {
+                        "Num": [
+                          "3",
+                          {
+                            "Span": {
+                              "offset": "1127"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "inline": {
+                      "Some": {
+                        "FunctionType": {
+                          "params": [
+                            "None",
+                            "None",
+                            "I32"
+                          ],
+                          "results": null
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "Data": {
+              "Data": {
+                "span": {
+                  "Span": {
+                    "offset": "1173"
+                  }
+                },
+                "id": {
+                  "Some": "\"ATS_2d0_2e2_2e11_2src_2ats_array_2edats__staload.ATS_2d0_2e2_2e11_2src_2ats_array_2edats__staload_flag\""
+                },
+                "name": "None",
+                "kind": {
+                  "Active": {
+                    "memory": {
+                      "Num": [
+                        "0",
+                        {
+                          "Span": {
+                            "offset": "1173"
+                          }
+                        }
+                      ]
+                    },
+                    "offset": {
+                      "Expression": {
+                        "instrs": {
+                          "I32Const": "0"
+                        }
+                      }
+                    }
+                  }
+                },
+                "data": {
+                  "String": "0"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

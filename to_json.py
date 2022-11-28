@@ -1,24 +1,20 @@
 from syn_compiler.lexer import Lexer
 from syn_compiler.parser import Parser
-import os
-import glob
+import os, glob, sys
 
-# for filename in glob.glob('./*.wasm', recursive=True):
-for filename in [glob.glob('./test/abcm2ps/**/music.o', recursive=True)[0]]:
-    os.system("cargo run " + filename)
-    f_debug = open("./parsed_debug.txt", "r")
-    input = f_debug.read()
-    f_debug.close()
-    lexer = Lexer().build()
-    lexer.input(input)
-    # while True:
-    #     tok = lexer.token()
-    #     if not tok:
-    #         break
-    #     print(tok)
-    parser = Parser()
-    parser.build().parse(input, lexer, False)
-    f_json = open("./parsed_json.json", "w+")
-    f_json.write(parser.dictTree_string)
-    f_json.close()
+# target_file = './projects/abcm2ps/**/music.o'
+
+def parse_binary_to_json(target_file):
+    for filename in [glob.glob(target_file, recursive=True)[0]]:
+        _ = os.system("cargo run -q " + filename)
+        f_debug = open("./__logs__/parsed_debug.txt", "r")
+        input = f_debug.read()
+        f_debug.close()
+        lexer = Lexer().build()
+        lexer.input(input)
+        parser = Parser()
+        parser.build().parse(input, lexer, False)
+        f_json = open("./__logs__/parsed_json.json", "w+")
+        f_json.write(parser.dictTree_string)
+        f_json.close()
 
