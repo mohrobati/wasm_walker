@@ -1,0 +1,537 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> entity
+Rule 2     entity -> enum
+Rule 3     entity -> struct
+Rule 4     entity -> array
+Rule 5     entity -> atomic
+Rule 6     entity_list -> entity_list entity
+Rule 7     entity_list -> <empty>
+Rule 8     field_list -> field_list field
+Rule 9     field_list -> <empty>
+Rule 10    field -> atomic COLON entity
+Rule 11    enum -> atomic LRB entity_list RRB
+Rule 12    enum -> LRB entity_list RRB
+Rule 13    struct -> atomic LCB field_list RCB
+Rule 14    struct -> LCB field_list RCB
+Rule 15    array -> atomic LSB entity_list RSB
+Rule 16    array -> LSB entity_list RSB
+Rule 17    atomic -> ID
+
+Terminals, with rules where they appear
+
+COLON                : 10
+ID                   : 17
+LCB                  : 13 14
+LRB                  : 11 12
+LSB                  : 15 16
+RCB                  : 13 14
+RRB                  : 11 12
+RSB                  : 15 16
+error                : 
+
+Nonterminals, with rules where they appear
+
+array                : 4
+atomic               : 5 10 11 13 15
+entity               : 1 6 10
+entity_list          : 6 11 12 15 16
+enum                 : 2
+field                : 8
+field_list           : 8 13 14
+program              : 0
+struct               : 3
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    program                        shift and go to state 1
+    entity                         shift and go to state 2
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+    atomic                         shift and go to state 6
+
+state 1
+
+    (0) S' -> program .
+
+
+
+state 2
+
+    (1) program -> entity .
+
+    $end            reduce using rule 1 (program -> entity .)
+
+
+state 3
+
+    (2) entity -> enum .
+
+    $end            reduce using rule 2 (entity -> enum .)
+    RRB             reduce using rule 2 (entity -> enum .)
+    LRB             reduce using rule 2 (entity -> enum .)
+    LCB             reduce using rule 2 (entity -> enum .)
+    LSB             reduce using rule 2 (entity -> enum .)
+    ID              reduce using rule 2 (entity -> enum .)
+    RSB             reduce using rule 2 (entity -> enum .)
+    RCB             reduce using rule 2 (entity -> enum .)
+
+
+state 4
+
+    (3) entity -> struct .
+
+    $end            reduce using rule 3 (entity -> struct .)
+    RRB             reduce using rule 3 (entity -> struct .)
+    LRB             reduce using rule 3 (entity -> struct .)
+    LCB             reduce using rule 3 (entity -> struct .)
+    LSB             reduce using rule 3 (entity -> struct .)
+    ID              reduce using rule 3 (entity -> struct .)
+    RSB             reduce using rule 3 (entity -> struct .)
+    RCB             reduce using rule 3 (entity -> struct .)
+
+
+state 5
+
+    (4) entity -> array .
+
+    $end            reduce using rule 4 (entity -> array .)
+    RRB             reduce using rule 4 (entity -> array .)
+    LRB             reduce using rule 4 (entity -> array .)
+    LCB             reduce using rule 4 (entity -> array .)
+    LSB             reduce using rule 4 (entity -> array .)
+    ID              reduce using rule 4 (entity -> array .)
+    RSB             reduce using rule 4 (entity -> array .)
+    RCB             reduce using rule 4 (entity -> array .)
+
+
+state 6
+
+    (5) entity -> atomic .
+    (11) enum -> atomic . LRB entity_list RRB
+    (13) struct -> atomic . LCB field_list RCB
+    (15) array -> atomic . LSB entity_list RSB
+
+  ! shift/reduce conflict for LRB resolved as shift
+  ! shift/reduce conflict for LCB resolved as shift
+  ! shift/reduce conflict for LSB resolved as shift
+    $end            reduce using rule 5 (entity -> atomic .)
+    RRB             reduce using rule 5 (entity -> atomic .)
+    ID              reduce using rule 5 (entity -> atomic .)
+    RSB             reduce using rule 5 (entity -> atomic .)
+    RCB             reduce using rule 5 (entity -> atomic .)
+    LRB             shift and go to state 11
+    LCB             shift and go to state 12
+    LSB             shift and go to state 13
+
+  ! LRB             [ reduce using rule 5 (entity -> atomic .) ]
+  ! LCB             [ reduce using rule 5 (entity -> atomic .) ]
+  ! LSB             [ reduce using rule 5 (entity -> atomic .) ]
+
+
+state 7
+
+    (12) enum -> LRB . entity_list RRB
+    (6) entity_list -> . entity_list entity
+    (7) entity_list -> .
+
+    RRB             reduce using rule 7 (entity_list -> .)
+    LRB             reduce using rule 7 (entity_list -> .)
+    LCB             reduce using rule 7 (entity_list -> .)
+    LSB             reduce using rule 7 (entity_list -> .)
+    ID              reduce using rule 7 (entity_list -> .)
+
+    entity_list                    shift and go to state 14
+
+state 8
+
+    (14) struct -> LCB . field_list RCB
+    (8) field_list -> . field_list field
+    (9) field_list -> .
+
+    RCB             reduce using rule 9 (field_list -> .)
+    ID              reduce using rule 9 (field_list -> .)
+
+    field_list                     shift and go to state 15
+
+state 9
+
+    (16) array -> LSB . entity_list RSB
+    (6) entity_list -> . entity_list entity
+    (7) entity_list -> .
+
+    RSB             reduce using rule 7 (entity_list -> .)
+    LRB             reduce using rule 7 (entity_list -> .)
+    LCB             reduce using rule 7 (entity_list -> .)
+    LSB             reduce using rule 7 (entity_list -> .)
+    ID              reduce using rule 7 (entity_list -> .)
+
+    entity_list                    shift and go to state 16
+
+state 10
+
+    (17) atomic -> ID .
+
+    LRB             reduce using rule 17 (atomic -> ID .)
+    LCB             reduce using rule 17 (atomic -> ID .)
+    LSB             reduce using rule 17 (atomic -> ID .)
+    $end            reduce using rule 17 (atomic -> ID .)
+    RRB             reduce using rule 17 (atomic -> ID .)
+    ID              reduce using rule 17 (atomic -> ID .)
+    COLON           reduce using rule 17 (atomic -> ID .)
+    RSB             reduce using rule 17 (atomic -> ID .)
+    RCB             reduce using rule 17 (atomic -> ID .)
+
+
+state 11
+
+    (11) enum -> atomic LRB . entity_list RRB
+    (6) entity_list -> . entity_list entity
+    (7) entity_list -> .
+
+    RRB             reduce using rule 7 (entity_list -> .)
+    LRB             reduce using rule 7 (entity_list -> .)
+    LCB             reduce using rule 7 (entity_list -> .)
+    LSB             reduce using rule 7 (entity_list -> .)
+    ID              reduce using rule 7 (entity_list -> .)
+
+    entity_list                    shift and go to state 17
+
+state 12
+
+    (13) struct -> atomic LCB . field_list RCB
+    (8) field_list -> . field_list field
+    (9) field_list -> .
+
+    RCB             reduce using rule 9 (field_list -> .)
+    ID              reduce using rule 9 (field_list -> .)
+
+    field_list                     shift and go to state 18
+
+state 13
+
+    (15) array -> atomic LSB . entity_list RSB
+    (6) entity_list -> . entity_list entity
+    (7) entity_list -> .
+
+    RSB             reduce using rule 7 (entity_list -> .)
+    LRB             reduce using rule 7 (entity_list -> .)
+    LCB             reduce using rule 7 (entity_list -> .)
+    LSB             reduce using rule 7 (entity_list -> .)
+    ID              reduce using rule 7 (entity_list -> .)
+
+    entity_list                    shift and go to state 19
+
+state 14
+
+    (12) enum -> LRB entity_list . RRB
+    (6) entity_list -> entity_list . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    RRB             shift and go to state 20
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    entity                         shift and go to state 21
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+    atomic                         shift and go to state 6
+
+state 15
+
+    (14) struct -> LCB field_list . RCB
+    (8) field_list -> field_list . field
+    (10) field -> . atomic COLON entity
+    (17) atomic -> . ID
+
+    RCB             shift and go to state 22
+    ID              shift and go to state 10
+
+    field                          shift and go to state 23
+    atomic                         shift and go to state 24
+
+state 16
+
+    (16) array -> LSB entity_list . RSB
+    (6) entity_list -> entity_list . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    RSB             shift and go to state 25
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    entity                         shift and go to state 21
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+    atomic                         shift and go to state 6
+
+state 17
+
+    (11) enum -> atomic LRB entity_list . RRB
+    (6) entity_list -> entity_list . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    RRB             shift and go to state 26
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    atomic                         shift and go to state 6
+    entity                         shift and go to state 21
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+
+state 18
+
+    (13) struct -> atomic LCB field_list . RCB
+    (8) field_list -> field_list . field
+    (10) field -> . atomic COLON entity
+    (17) atomic -> . ID
+
+    RCB             shift and go to state 27
+    ID              shift and go to state 10
+
+    atomic                         shift and go to state 24
+    field                          shift and go to state 23
+
+state 19
+
+    (15) array -> atomic LSB entity_list . RSB
+    (6) entity_list -> entity_list . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    RSB             shift and go to state 28
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    atomic                         shift and go to state 6
+    entity                         shift and go to state 21
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+
+state 20
+
+    (12) enum -> LRB entity_list RRB .
+
+    $end            reduce using rule 12 (enum -> LRB entity_list RRB .)
+    RRB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+    LRB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+    LCB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+    LSB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+    ID              reduce using rule 12 (enum -> LRB entity_list RRB .)
+    RSB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+    RCB             reduce using rule 12 (enum -> LRB entity_list RRB .)
+
+
+state 21
+
+    (6) entity_list -> entity_list entity .
+
+    RRB             reduce using rule 6 (entity_list -> entity_list entity .)
+    LRB             reduce using rule 6 (entity_list -> entity_list entity .)
+    LCB             reduce using rule 6 (entity_list -> entity_list entity .)
+    LSB             reduce using rule 6 (entity_list -> entity_list entity .)
+    ID              reduce using rule 6 (entity_list -> entity_list entity .)
+    RSB             reduce using rule 6 (entity_list -> entity_list entity .)
+
+
+state 22
+
+    (14) struct -> LCB field_list RCB .
+
+    $end            reduce using rule 14 (struct -> LCB field_list RCB .)
+    RRB             reduce using rule 14 (struct -> LCB field_list RCB .)
+    LRB             reduce using rule 14 (struct -> LCB field_list RCB .)
+    LCB             reduce using rule 14 (struct -> LCB field_list RCB .)
+    LSB             reduce using rule 14 (struct -> LCB field_list RCB .)
+    ID              reduce using rule 14 (struct -> LCB field_list RCB .)
+    RSB             reduce using rule 14 (struct -> LCB field_list RCB .)
+    RCB             reduce using rule 14 (struct -> LCB field_list RCB .)
+
+
+state 23
+
+    (8) field_list -> field_list field .
+
+    RCB             reduce using rule 8 (field_list -> field_list field .)
+    ID              reduce using rule 8 (field_list -> field_list field .)
+
+
+state 24
+
+    (10) field -> atomic . COLON entity
+
+    COLON           shift and go to state 29
+
+
+state 25
+
+    (16) array -> LSB entity_list RSB .
+
+    $end            reduce using rule 16 (array -> LSB entity_list RSB .)
+    RRB             reduce using rule 16 (array -> LSB entity_list RSB .)
+    LRB             reduce using rule 16 (array -> LSB entity_list RSB .)
+    LCB             reduce using rule 16 (array -> LSB entity_list RSB .)
+    LSB             reduce using rule 16 (array -> LSB entity_list RSB .)
+    ID              reduce using rule 16 (array -> LSB entity_list RSB .)
+    RSB             reduce using rule 16 (array -> LSB entity_list RSB .)
+    RCB             reduce using rule 16 (array -> LSB entity_list RSB .)
+
+
+state 26
+
+    (11) enum -> atomic LRB entity_list RRB .
+
+    $end            reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    RRB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    LRB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    LCB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    LSB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    ID              reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    RSB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+    RCB             reduce using rule 11 (enum -> atomic LRB entity_list RRB .)
+
+
+state 27
+
+    (13) struct -> atomic LCB field_list RCB .
+
+    $end            reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    RRB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    LRB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    LCB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    LSB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    ID              reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    RSB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+    RCB             reduce using rule 13 (struct -> atomic LCB field_list RCB .)
+
+
+state 28
+
+    (15) array -> atomic LSB entity_list RSB .
+
+    $end            reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    RRB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    LRB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    LCB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    LSB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    ID              reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    RSB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+    RCB             reduce using rule 15 (array -> atomic LSB entity_list RSB .)
+
+
+state 29
+
+    (10) field -> atomic COLON . entity
+    (2) entity -> . enum
+    (3) entity -> . struct
+    (4) entity -> . array
+    (5) entity -> . atomic
+    (11) enum -> . atomic LRB entity_list RRB
+    (12) enum -> . LRB entity_list RRB
+    (13) struct -> . atomic LCB field_list RCB
+    (14) struct -> . LCB field_list RCB
+    (15) array -> . atomic LSB entity_list RSB
+    (16) array -> . LSB entity_list RSB
+    (17) atomic -> . ID
+
+    LRB             shift and go to state 7
+    LCB             shift and go to state 8
+    LSB             shift and go to state 9
+    ID              shift and go to state 10
+
+    atomic                         shift and go to state 6
+    entity                         shift and go to state 30
+    enum                           shift and go to state 3
+    struct                         shift and go to state 4
+    array                          shift and go to state 5
+
+state 30
+
+    (10) field -> atomic COLON entity .
+
+    RCB             reduce using rule 10 (field -> atomic COLON entity .)
+    ID              reduce using rule 10 (field -> atomic COLON entity .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for LRB in state 6 resolved as shift
+WARNING: shift/reduce conflict for LCB in state 6 resolved as shift
+WARNING: shift/reduce conflict for LSB in state 6 resolved as shift
