@@ -16,4 +16,7 @@ wabt/
 wasm-tools/
 benchmark/
 __pycache__/
+syn_compiler/__pycache__/
 projects/
+target/*
+ply/

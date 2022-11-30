@@ -1,4 +1,4 @@
-from ply import lex
+from ply.src.ply import lex
 
 
 class Lexer:

@@ -3,13 +3,14 @@ from to_json import *
 import os, json
 
 final_set = set()
-dataset = open("./benchmark/data.jsonl", "r")
+dataset = open("./data.jsonl", "r")
 final_set_file = open("./__logs__/paths.txt", "w+")
 curr_file = None
 curr_indices = []
 
 def mine_binary_info():
-    parse_binary_to_json(curr_file.replace("../../binaries/wasm-dwarf/", "./projects/"))
+    print("Starting to mine:", curr_file)
+    parse_binary_to_json(curr_file.replace("../../binaries/wasm-dwarf/", "../data/wasm-dwarf/"))
     json_file = open("./__logs__/parsed_json.json", "r")
     wat_dict = json.loads(json_file.read())
     json_file.close()
@@ -19,24 +20,32 @@ def mine_binary_info():
     for func in functions:
         for path in func:
             final_set.add(path[5:])
+    print("Mining done!\n===")
 
-for line in dataset:
-    datapoint = json.loads(line)
-    if curr_file is None:
-        curr_file = datapoint['file']
-    if curr_file == datapoint['file']:
-        curr_indices.append(datapoint['function_idx'])
-    else:
+try:
+    for line in dataset:
+        datapoint = json.loads(line)
+        if curr_file is None:
+            curr_file = datapoint['file']
+        if curr_file == datapoint['file']:
+            curr_indices.append(datapoint['function_idx'])
+        else:
+            mine_binary_info()
+            curr_file = datapoint['file']
+            curr_indices = []
+            curr_indices.append(datapoint['function_idx'])
+
+    if len(curr_indices):
         mine_binary_info()
-        curr_file = datapoint['file']
-        curr_indices = []
-        curr_indices.append(datapoint['function_idx'])
 
-if len(curr_indices):
-    mine_binary_info()
-
-for item in final_set:
-    final_set_file.write(item + "\n")
-    
-dataset.close()
-final_set_file.close()
+    for item in final_set:
+        final_set_file.write(item + "\n")
+        
+    dataset.close()
+    final_set_file.close()
+except:
+    for item in final_set:
+        final_set_file.write(item + "\n")
+        
+    dataset.close()
+    final_set_file.close()

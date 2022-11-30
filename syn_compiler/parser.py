@@ -1,5 +1,5 @@
 from cmath import pi
-from ply import yacc
+from ply.src.ply import yacc
 from .lexer import Lexer
 from .nonTerminal import NonTerminal
 
