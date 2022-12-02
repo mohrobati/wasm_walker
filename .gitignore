@@ -19,3 +19,4 @@ __pycache__/
 projects/
 target/*
 ply/
+__logs__/results.txt
