@@ -25,7 +25,7 @@ def parse_binary_to_json(target_file):
     for filename in [glob.glob(target_file, recursive=True)[0]]:
         proc = multiprocessing.Process(target=do_work, args=(filename, return_dict))
         proc.start()
-        proc.join(timeout=60)
+        proc.join(timeout=600)
         proc.terminate()
     return return_dict['success']
     

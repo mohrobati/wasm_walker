@@ -2,7 +2,7 @@ from path import *
 from to_json import *
 import os, json
 
-dataset = open("./benchmark/data.jsonl", "r")
+dataset = open("./benchmark/train.jsonl", "r")
 final_results_file = open("./__logs__/results.txt", "w+")
 hash_table = json.loads(open("./embedding/hash_table.json", "r").read())
 curr_file = None
