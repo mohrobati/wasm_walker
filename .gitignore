@@ -2,3 +2,4 @@ data/seqs.7z
 data/combined.7z
 models/models.7z
 implementation/extraction/target
+.DS_Store
