@@ -1,0 +1,54 @@
+2023-03-17 05:33:57 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/name/10/seq4/y_test.acc.txt'...
+2023-03-17 05:33:57 INFO     predictions:               86355
+2023-03-17 05:33:57 INFO     ground truth samples:      17271
+2023-03-17 05:33:57 INFO     top-k: 5
+2023-03-17 05:33:57 INFO     perfect match accuracy:
+2023-03-17 05:33:57 INFO       top-1: 19.93% (3442/17271)
+2023-03-17 05:33:57 INFO       top-2: 27.98% (4832/17271)
+2023-03-17 05:33:57 INFO       top-3: 30.92% (5341/17271)
+2023-03-17 05:33:57 INFO       top-4: 33.80% (5838/17271)
+2023-03-17 05:33:57 INFO       top-5: 38.59% (6665/17271)
+2023-03-17 05:33:57 INFO     average type prefix score (top-1): 0.1994
+2023-03-17 05:33:57 INFO     average weighted type prefix score (top-1): 0.1994
+2023-03-17 05:33:57 INFO     average Jaccard metric (top-1): 0.1994
+2023-03-17 05:33:58 INFO     BLEU score (top-1, corpus): 0.2649
+2023-03-17 05:33:58 INFO     most common mispredictions:
+2023-03-17 05:33:58 INFO       ground truth (674 samples, 3.90% of all samples):
+2023-03-17 05:33:58 INFO           move
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 674, 100.00% of this label is wrong):
+2023-03-17 05:33:58 INFO          620 (91.99% of mispredictions) forward
+2023-03-17 05:33:58 INFO           38 ( 5.64% of mispredictions) copy
+2023-03-17 05:33:58 INFO            9 ( 1.34% of mispredictions) operator-=
+2023-03-17 05:33:58 INFO            7 ( 1.04% of mispredictions) main
+2023-03-17 05:33:58 INFO       ground truth (527 samples, 3.05% of all samples):
+2023-03-17 05:33:58 INFO           addressof
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 527, 100.00% of this label is wrong):
+2023-03-17 05:33:58 INFO          510 (96.77% of mispredictions) forward
+2023-03-17 05:33:58 INFO           17 ( 3.23% of mispredictions) operator-=
+2023-03-17 05:33:58 INFO       ground truth (353 samples, 2.04% of all samples):
+2023-03-17 05:33:58 INFO           operator==
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 347, 98.30% of this label is wrong):
+2023-03-17 05:33:58 INFO          136 (39.19% of mispredictions) libcpp_isfinite
+2023-03-17 05:33:58 INFO          103 (29.68% of mispredictions) operator!=
+2023-03-17 05:33:58 INFO           36 (10.37% of mispredictions) none
+2023-03-17 05:33:58 INFO           35 (10.09% of mispredictions) distance
+2023-03-17 05:33:58 INFO           16 ( 4.61% of mispredictions) get_line
+2023-03-17 05:33:58 INFO       ground truth (226 samples, 1.31% of all samples):
+2023-03-17 05:33:58 INFO           to_address
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 226, 100.00% of this label is wrong):
+2023-03-17 05:33:58 INFO          214 (94.69% of mispredictions) forward
+2023-03-17 05:33:58 INFO           12 ( 5.31% of mispredictions) operator-=
+2023-03-17 05:33:58 INFO       ground truth (142 samples, 0.82% of all samples):
+2023-03-17 05:33:58 INFO           put_character_sequence
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 141, 99.30% of this label is wrong):
+2023-03-17 05:33:58 INFO           60 (42.55% of mispredictions) gettheregistryhub
+2023-03-17 05:33:58 INFO           44 (31.21% of mispredictions) decode
+2023-03-17 05:33:58 INFO           25 (17.73% of mispredictions) getline
+2023-03-17 05:33:58 INFO           10 ( 7.09% of mispredictions) ws
+2023-03-17 05:33:58 INFO            1 ( 0.71% of mispredictions) main
+2023-03-17 05:33:58 INFO       ground truth (115 samples, 0.67% of all samples):
+2023-03-17 05:33:58 INFO           get
+2023-03-17 05:33:58 INFO       most common mispredictions (in total 115, 100.00% of this label is wrong):
+2023-03-17 05:33:58 INFO          110 (95.65% of mispredictions) filesize
+2023-03-17 05:33:58 INFO            3 ( 2.61% of mispredictions) handle
+2023-03-17 05:33:58 INFO            2 ( 1.74% of mispredictions) main

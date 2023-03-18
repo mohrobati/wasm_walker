@@ -1,0 +1,48 @@
+2023-03-17 04:19:50 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/seqs/eklavya/seq4/y_test.acc.txt'...
+2023-03-17 04:19:50 INFO     predictions:              215840
+2023-03-17 04:19:50 INFO     ground truth samples:      43168
+2023-03-17 04:19:50 INFO     top-k: 5
+2023-03-17 04:19:50 INFO     perfect match accuracy:
+2023-03-17 04:19:50 INFO       top-1: 64.04% (27645/43168)
+2023-03-17 04:19:50 INFO       top-2: 93.82% (40499/43168)
+2023-03-17 04:19:50 INFO       top-3: 98.48% (42513/43168)
+2023-03-17 04:19:50 INFO       top-4: 99.79% (43079/43168)
+2023-03-17 04:19:50 INFO       top-5: 99.91% (43128/43168)
+2023-03-17 04:19:50 INFO     average type prefix score (top-1): 0.6404
+2023-03-17 04:19:50 INFO     average weighted type prefix score (top-1): 0.6404
+2023-03-17 04:19:50 INFO     average Jaccard metric (top-1): 0.6405
+2023-03-17 04:19:52 INFO     BLEU score (top-1, corpus): 0.5508
+2023-03-17 04:19:52 INFO     most common mispredictions:
+2023-03-17 04:19:52 INFO       ground truth (13603 samples, 31.51% of all samples):
+2023-03-17 04:19:52 INFO           pointer
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 9490, 69.76% of this label is wrong):
+2023-03-17 04:19:52 INFO         9357 (98.60% of mispredictions) int
+2023-03-17 04:19:52 INFO           78 ( 0.82% of mispredictions) enum
+2023-03-17 04:19:52 INFO           55 ( 0.58% of mispredictions) float
+2023-03-17 04:19:52 INFO       ground truth (25235 samples, 58.46% of all samples):
+2023-03-17 04:19:52 INFO           int
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 3925, 15.55% of this label is wrong):
+2023-03-17 04:19:52 INFO         3447 (87.82% of mispredictions) pointer
+2023-03-17 04:19:52 INFO          259 ( 6.60% of mispredictions) enum
+2023-03-17 04:19:52 INFO          207 ( 5.27% of mispredictions) float
+2023-03-17 04:19:52 INFO            6 ( 0.15% of mispredictions) char
+2023-03-17 04:19:52 INFO            6 ( 0.15% of mispredictions) char int
+2023-03-17 04:19:52 INFO       ground truth (1361 samples, 3.15% of all samples):
+2023-03-17 04:19:52 INFO           enum
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 1360, 99.93% of this label is wrong):
+2023-03-17 04:19:52 INFO          999 (73.46% of mispredictions) int
+2023-03-17 04:19:52 INFO          315 (23.16% of mispredictions) pointer
+2023-03-17 04:19:52 INFO           46 ( 3.38% of mispredictions) float
+2023-03-17 04:19:52 INFO       ground truth (2641 samples, 6.12% of all samples):
+2023-03-17 04:19:52 INFO           float
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 486, 18.40% of this label is wrong):
+2023-03-17 04:19:52 INFO          444 (91.36% of mispredictions) int
+2023-03-17 04:19:52 INFO           42 ( 8.64% of mispredictions) pointer
+2023-03-17 04:19:52 INFO       ground truth (190 samples, 0.44% of all samples):
+2023-03-17 04:19:52 INFO           char
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 190, 100.00% of this label is wrong):
+2023-03-17 04:19:52 INFO          190 (100.00% of mispredictions) int
+2023-03-17 04:19:52 INFO       ground truth (138 samples, 0.32% of all samples):
+2023-03-17 04:19:52 INFO           struct
+2023-03-17 04:19:52 INFO       most common mispredictions (in total 72, 52.17% of this label is wrong):
+2023-03-17 04:19:52 INFO           72 (100.00% of mispredictions) int

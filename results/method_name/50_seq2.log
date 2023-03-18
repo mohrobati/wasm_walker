@@ -1,0 +1,62 @@
+2023-03-17 05:41:04 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/name/50/seq2/y_test.acc.txt'...
+2023-03-17 05:41:04 INFO     predictions:               55980
+2023-03-17 05:41:04 INFO     ground truth samples:      11196
+2023-03-17 05:41:04 INFO     top-k: 5
+2023-03-17 05:41:04 INFO     perfect match accuracy:
+2023-03-17 05:41:04 INFO       top-1: 71.46% (8001/11196)
+2023-03-17 05:41:04 INFO       top-2: 76.21% (8532/11196)
+2023-03-17 05:41:04 INFO       top-3: 83.17% (9312/11196)
+2023-03-17 05:41:04 INFO       top-4: 84.18% (9425/11196)
+2023-03-17 05:41:04 INFO       top-5: 84.70% (9483/11196)
+2023-03-17 05:41:04 INFO     average type prefix score (top-1): 0.7146
+2023-03-17 05:41:04 INFO     average weighted type prefix score (top-1): 0.7146
+2023-03-17 05:41:04 INFO     average Jaccard metric (top-1): 0.7146
+2023-03-17 05:41:05 INFO     BLEU score (top-1, corpus): 0.8442
+2023-03-17 05:41:05 INFO     most common mispredictions:
+2023-03-17 05:41:05 INFO       ground truth (674 samples, 6.02% of all samples):
+2023-03-17 05:41:05 INFO           move
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 659, 97.77% of this label is wrong):
+2023-03-17 05:41:05 INFO          581 (88.16% of mispredictions) forward
+2023-03-17 05:41:05 INFO           30 ( 4.55% of mispredictions) copy
+2023-03-17 05:41:05 INFO            9 ( 1.37% of mispredictions) end
+2023-03-17 05:41:05 INFO            9 ( 1.37% of mispredictions) forward_as_tuple
+2023-03-17 05:41:05 INFO            7 ( 1.06% of mispredictions) operator==
+2023-03-17 05:41:05 INFO       ground truth (527 samples, 4.71% of all samples):
+2023-03-17 05:41:05 INFO           addressof
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 527, 100.00% of this label is wrong):
+2023-03-17 05:41:05 INFO          485 (92.03% of mispredictions) forward
+2023-03-17 05:41:05 INFO           17 ( 3.23% of mispredictions) hex
+2023-03-17 05:41:05 INFO            8 ( 1.52% of mispredictions) forward_as_tuple
+2023-03-17 05:41:05 INFO            5 ( 0.95% of mispredictions) end
+2023-03-17 05:41:05 INFO            3 ( 0.57% of mispredictions) operator==
+2023-03-17 05:41:05 INFO       ground truth (226 samples, 2.02% of all samples):
+2023-03-17 05:41:05 INFO           to_address
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 226, 100.00% of this label is wrong):
+2023-03-17 05:41:05 INFO          207 (91.59% of mispredictions) forward
+2023-03-17 05:41:05 INFO           14 ( 6.19% of mispredictions) hex
+2023-03-17 05:41:05 INFO            1 ( 0.44% of mispredictions) end
+2023-03-17 05:41:05 INFO            1 ( 0.44% of mispredictions) distance
+2023-03-17 05:41:05 INFO            1 ( 0.44% of mispredictions) copy_backward
+2023-03-17 05:41:05 INFO       ground truth (1412 samples, 12.61% of all samples):
+2023-03-17 05:41:05 INFO           forward
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 111, 7.86% of this label is wrong):
+2023-03-17 05:41:05 INFO           33 (29.73% of mispredictions) hex
+2023-03-17 05:41:05 INFO           16 (14.41% of mispredictions) operator!=
+2023-03-17 05:41:05 INFO           11 ( 9.91% of mispredictions) move_if_noexcept
+2023-03-17 05:41:05 INFO           11 ( 9.91% of mispredictions) forward_as_tuple
+2023-03-17 05:41:05 INFO           10 ( 9.01% of mispredictions) operator==
+2023-03-17 05:41:05 INFO       ground truth (115 samples, 1.03% of all samples):
+2023-03-17 05:41:05 INFO           get
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 110, 95.65% of this label is wrong):
+2023-03-17 05:41:05 INFO           59 (53.64% of mispredictions) move_if_noexcept
+2023-03-17 05:41:05 INFO           34 (30.91% of mispredictions) forward
+2023-03-17 05:41:05 INFO            9 ( 8.18% of mispredictions) move
+2023-03-17 05:41:05 INFO            2 ( 1.82% of mispredictions) forward_as_tuple
+2023-03-17 05:41:05 INFO            2 ( 1.82% of mispredictions) main
+2023-03-17 05:41:05 INFO       ground truth (101 samples, 0.90% of all samples):
+2023-03-17 05:41:05 INFO           max
+2023-03-17 05:41:05 INFO       most common mispredictions (in total 99, 98.02% of this label is wrong):
+2023-03-17 05:41:05 INFO           78 (78.79% of mispredictions) distance
+2023-03-17 05:41:05 INFO           18 (18.18% of mispredictions) min
+2023-03-17 05:41:05 INFO            2 ( 2.02% of mispredictions) forward
+2023-03-17 05:41:05 INFO            1 ( 1.01% of mispredictions) main

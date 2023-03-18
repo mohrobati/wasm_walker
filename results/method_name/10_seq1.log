@@ -1,0 +1,56 @@
+2023-03-17 05:30:45 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/name/10/seq1/y_test.acc.txt'...
+2023-03-17 05:30:45 INFO     predictions:               86355
+2023-03-17 05:30:45 INFO     ground truth samples:      17271
+2023-03-17 05:30:45 INFO     top-k: 5
+2023-03-17 05:30:45 INFO     perfect match accuracy:
+2023-03-17 05:30:45 INFO       top-1: 17.98% (3106/17271)
+2023-03-17 05:30:45 INFO       top-2: 22.49% (3884/17271)
+2023-03-17 05:30:45 INFO       top-3: 25.27% (4365/17271)
+2023-03-17 05:30:45 INFO       top-4: 27.44% (4740/17271)
+2023-03-17 05:30:45 INFO       top-5: 29.07% (5020/17271)
+2023-03-17 05:30:45 INFO     average type prefix score (top-1): 0.18
+2023-03-17 05:30:46 INFO     average weighted type prefix score (top-1): 0.18
+2023-03-17 05:30:46 INFO     average Jaccard metric (top-1): 0.18
+2023-03-17 05:30:47 INFO     BLEU score (top-1, corpus): 0.3332
+2023-03-17 05:30:47 INFO     most common mispredictions:
+2023-03-17 05:30:47 INFO       ground truth (1412 samples, 8.18% of all samples):
+2023-03-17 05:30:47 INFO           forward
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 1412, 100.00% of this label is wrong):
+2023-03-17 05:30:47 INFO         1370 (97.03% of mispredictions) none
+2023-03-17 05:30:47 INFO           39 ( 2.76% of mispredictions) f0r_init
+2023-03-17 05:30:47 INFO            2 ( 0.14% of mispredictions) fill
+2023-03-17 05:30:47 INFO            1 ( 0.07% of mispredictions) cups_isupper
+2023-03-17 05:30:47 INFO       ground truth (674 samples, 3.90% of all samples):
+2023-03-17 05:30:47 INFO           move
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 660, 97.92% of this label is wrong):
+2023-03-17 05:30:47 INFO          620 (93.94% of mispredictions) none
+2023-03-17 05:30:47 INFO           25 ( 3.79% of mispredictions) apply
+2023-03-17 05:30:47 INFO            9 ( 1.36% of mispredictions) f0r_init
+2023-03-17 05:30:47 INFO            3 ( 0.45% of mispredictions) signextend64
+2023-03-17 05:30:47 INFO            1 ( 0.15% of mispredictions) airenumdesc
+2023-03-17 05:30:47 INFO       ground truth (527 samples, 3.05% of all samples):
+2023-03-17 05:30:47 INFO           addressof
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 527, 100.00% of this label is wrong):
+2023-03-17 05:30:47 INFO          510 (96.77% of mispredictions) none
+2023-03-17 05:30:47 INFO           17 ( 3.23% of mispredictions) f0r_init
+2023-03-17 05:30:47 INFO       ground truth (353 samples, 2.04% of all samples):
+2023-03-17 05:30:47 INFO           operator==
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 315, 89.24% of this label is wrong):
+2023-03-17 05:30:47 INFO          171 (54.29% of mispredictions) operator!=
+2023-03-17 05:30:47 INFO          103 (32.70% of mispredictions) decodestoreint
+2023-03-17 05:30:47 INFO           13 ( 4.13% of mispredictions) mkplan
+2023-03-17 05:30:47 INFO            5 ( 1.59% of mispredictions) xml_setparamentityparsing
+2023-03-17 05:30:47 INFO            3 ( 0.95% of mispredictions) startswith
+2023-03-17 05:30:47 INFO       ground truth (226 samples, 1.31% of all samples):
+2023-03-17 05:30:47 INFO           to_address
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 226, 100.00% of this label is wrong):
+2023-03-17 05:30:47 INFO          214 (94.69% of mispredictions) none
+2023-03-17 05:30:47 INFO           12 ( 5.31% of mispredictions) f0r_init
+2023-03-17 05:30:47 INFO       ground truth (110 samples, 0.64% of all samples):
+2023-03-17 05:30:47 INFO           operator>>
+2023-03-17 05:30:47 INFO       most common mispredictions (in total 106, 96.36% of this label is wrong):
+2023-03-17 05:30:47 INFO           91 (85.85% of mispredictions) nrrdsprintin
+2023-03-17 05:30:47 INFO           12 (11.32% of mispredictions) main
+2023-03-17 05:30:47 INFO            1 ( 0.94% of mispredictions) compress
+2023-03-17 05:30:47 INFO            1 ( 0.94% of mispredictions) broadcast_var_alloc
+2023-03-17 05:30:47 INFO            1 ( 0.94% of mispredictions) l_dnacopy

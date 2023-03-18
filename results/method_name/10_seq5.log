@@ -1,0 +1,58 @@
+2023-03-17 05:35:14 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/name/10/seq5/y_test.acc.txt'...
+2023-03-17 05:35:14 INFO     predictions:               86355
+2023-03-17 05:35:14 INFO     ground truth samples:      17271
+2023-03-17 05:35:14 INFO     top-k: 5
+2023-03-17 05:35:14 INFO     perfect match accuracy:
+2023-03-17 05:35:14 INFO       top-1: 74.80% (12918/17271)
+2023-03-17 05:35:14 INFO       top-2: 84.30% (14559/17271)
+2023-03-17 05:35:14 INFO       top-3: 89.59% (15473/17271)
+2023-03-17 05:35:14 INFO       top-4: 90.84% (15689/17271)
+2023-03-17 05:35:14 INFO       top-5: 92.68% (16007/17271)
+2023-03-17 05:35:14 INFO     average type prefix score (top-1): 0.748
+2023-03-17 05:35:14 INFO     average weighted type prefix score (top-1): 0.748
+2023-03-17 05:35:14 INFO     average Jaccard metric (top-1): 0.748
+2023-03-17 05:35:16 INFO     BLEU score (top-1, corpus): 0.874
+2023-03-17 05:35:16 INFO     most common mispredictions:
+2023-03-17 05:35:16 INFO       ground truth (674 samples, 3.90% of all samples):
+2023-03-17 05:35:16 INFO           move
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 649, 96.29% of this label is wrong):
+2023-03-17 05:35:16 INFO          601 (92.60% of mispredictions) forward
+2023-03-17 05:35:16 INFO           34 ( 5.24% of mispredictions) copy
+2023-03-17 05:35:16 INFO            9 ( 1.39% of mispredictions) phylum_cast
+2023-03-17 05:35:16 INFO            3 ( 0.46% of mispredictions) move_backward
+2023-03-17 05:35:16 INFO            1 ( 0.15% of mispredictions) copy_constexpr
+2023-03-17 05:35:16 INFO       ground truth (527 samples, 3.05% of all samples):
+2023-03-17 05:35:16 INFO           addressof
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 526, 99.81% of this label is wrong):
+2023-03-17 05:35:16 INFO          497 (94.49% of mispredictions) forward
+2023-03-17 05:35:16 INFO           17 ( 3.23% of mispredictions) phylum_cast
+2023-03-17 05:35:16 INFO           11 ( 2.09% of mispredictions) move
+2023-03-17 05:35:16 INFO            1 ( 0.19% of mispredictions) unwrap_iter
+2023-03-17 05:35:16 INFO       ground truth (226 samples, 1.31% of all samples):
+2023-03-17 05:35:16 INFO           to_address
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 226, 100.00% of this label is wrong):
+2023-03-17 05:35:16 INFO          214 (94.69% of mispredictions) forward
+2023-03-17 05:35:16 INFO           12 ( 5.31% of mispredictions) phylum_cast
+2023-03-17 05:35:16 INFO       ground truth (101 samples, 0.58% of all samples):
+2023-03-17 05:35:16 INFO           max
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 87, 86.14% of this label is wrong):
+2023-03-17 05:35:16 INFO           81 (93.10% of mispredictions) distance
+2023-03-17 05:35:16 INFO            4 ( 4.60% of mispredictions) ntfs_mst_post_read_fixup
+2023-03-17 05:35:16 INFO            1 ( 1.15% of mispredictions) mbedtls_rsa_sign_func
+2023-03-17 05:35:16 INFO            1 ( 1.15% of mispredictions) readtype
+2023-03-17 05:35:16 INFO       ground truth (1412 samples, 8.18% of all samples):
+2023-03-17 05:35:16 INFO           forward
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 84, 5.95% of this label is wrong):
+2023-03-17 05:35:16 INFO           39 (46.43% of mispredictions) phylum_cast
+2023-03-17 05:35:16 INFO           35 (41.67% of mispredictions) move
+2023-03-17 05:35:16 INFO            7 ( 8.33% of mispredictions) addressof
+2023-03-17 05:35:16 INFO            2 ( 2.38% of mispredictions) fwd
+2023-03-17 05:35:16 INFO            1 ( 1.19% of mispredictions) unwrap_iter
+2023-03-17 05:35:16 INFO       ground truth (354 samples, 2.05% of all samples):
+2023-03-17 05:35:16 INFO           operator!=
+2023-03-17 05:35:16 INFO       most common mispredictions (in total 69, 19.49% of this label is wrong):
+2023-03-17 05:35:16 INFO           56 (81.16% of mispredictions) compare
+2023-03-17 05:35:16 INFO            6 ( 8.70% of mispredictions) operator
+2023-03-17 05:35:16 INFO            3 ( 4.35% of mispredictions) operator==
+2023-03-17 05:35:16 INFO            2 ( 2.90% of mispredictions) babl_get_conversion_test_pixels
+2023-03-17 05:35:16 INFO            1 ( 1.45% of mispredictions) idata_cache_compare

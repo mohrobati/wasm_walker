@@ -1,0 +1,51 @@
+2023-03-17 05:45:25 INFO     reading predictions from 'drive/MyDrive/Colab Notebooks/name/100/seq3/y_test.acc.txt'...
+2023-03-17 05:45:25 INFO     predictions:               48230
+2023-03-17 05:45:25 INFO     ground truth samples:       9646
+2023-03-17 05:45:25 INFO     top-k: 5
+2023-03-17 05:45:25 INFO     perfect match accuracy:
+2023-03-17 05:45:25 INFO       top-1: 76.62% (7391/9646)
+2023-03-17 05:45:25 INFO       top-2: 86.91% (8383/9646)
+2023-03-17 05:45:25 INFO       top-3: 93.53% (9022/9646)
+2023-03-17 05:45:25 INFO       top-4: 96.48% (9306/9646)
+2023-03-17 05:45:25 INFO       top-5: 96.68% (9326/9646)
+2023-03-17 05:45:25 INFO     average type prefix score (top-1): 0.7664
+2023-03-17 05:45:25 INFO     average weighted type prefix score (top-1): 0.7665
+2023-03-17 05:45:25 INFO     average Jaccard metric (top-1): 0.7664
+2023-03-17 05:45:26 INFO     BLEU score (top-1, corpus): 0.8704
+2023-03-17 05:45:26 INFO     most common mispredictions:
+2023-03-17 05:45:26 INFO       ground truth (674 samples, 6.99% of all samples):
+2023-03-17 05:45:26 INFO           move
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 644, 95.55% of this label is wrong):
+2023-03-17 05:45:26 INFO          615 (95.50% of mispredictions) forward
+2023-03-17 05:45:26 INFO           15 ( 2.33% of mispredictions) copy
+2023-03-17 05:45:26 INFO           12 ( 1.86% of mispredictions) phylum_cast
+2023-03-17 05:45:26 INFO            1 ( 0.16% of mispredictions) copy_constexpr
+2023-03-17 05:45:26 INFO            1 ( 0.16% of mispredictions) addressof
+2023-03-17 05:45:26 INFO       ground truth (527 samples, 5.46% of all samples):
+2023-03-17 05:45:26 INFO           addressof
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 527, 100.00% of this label is wrong):
+2023-03-17 05:45:26 INFO          506 (96.02% of mispredictions) forward
+2023-03-17 05:45:26 INFO           20 ( 3.80% of mispredictions) phylum_cast
+2023-03-17 05:45:26 INFO            1 ( 0.19% of mispredictions) main
+2023-03-17 05:45:26 INFO       ground truth (226 samples, 2.34% of all samples):
+2023-03-17 05:45:26 INFO           to_address
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 226, 100.00% of this label is wrong):
+2023-03-17 05:45:26 INFO          218 (96.46% of mispredictions) forward
+2023-03-17 05:45:26 INFO            8 ( 3.54% of mispredictions) phylum_cast
+2023-03-17 05:45:26 INFO       ground truth (68 samples, 0.70% of all samples):
+2023-03-17 05:45:26 INFO           fwd
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 66, 97.06% of this label is wrong):
+2023-03-17 05:45:26 INFO           62 (93.94% of mispredictions) forward
+2023-03-17 05:45:26 INFO            2 ( 3.03% of mispredictions) mv
+2023-03-17 05:45:26 INFO            1 ( 1.52% of mispredictions) min
+2023-03-17 05:45:26 INFO            1 ( 1.52% of mispredictions) addressof
+2023-03-17 05:45:26 INFO       ground truth (115 samples, 1.19% of all samples):
+2023-03-17 05:45:26 INFO           get
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 61, 53.04% of this label is wrong):
+2023-03-17 05:45:26 INFO           60 (98.36% of mispredictions) move_if_noexcept
+2023-03-17 05:45:26 INFO            1 ( 1.64% of mispredictions) none
+2023-03-17 05:45:26 INFO       ground truth (62 samples, 0.64% of all samples):
+2023-03-17 05:45:26 INFO           unwrap_iter
+2023-03-17 05:45:26 INFO       most common mispredictions (in total 54, 87.10% of this label is wrong):
+2023-03-17 05:45:26 INFO           53 (98.15% of mispredictions) forward
+2023-03-17 05:45:26 INFO            1 ( 1.85% of mispredictions) phylum_cast
