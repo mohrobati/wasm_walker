@@ -6,7 +6,7 @@ This repository houses the official replication package for the paper titled "Wa
 
 <li>Dataset: We have utilized the WebAssembly (wasm) binaries compiled by <a href="https://github.com/sola-st/wasm-type-prediction">SnowWhite</a> to generate two path-based code representations. After processing the dataset using our pipeline, we have obtained a new dataset that we have used for training our models. This replication package includes both our new dataset and SnowWhite's dataset.</li>
 
-<li>Pipeline: Our pipeline has been designed to extract path sequences from Wasm binaries. It has been implemented using Rust and Python.</li>
+<li>Pipeline: Our pipeline has been designed to extract path sequences from Wasm binaries. We implemented our pipeline using Rust and Python.</li>
 
 <li>Data cleaning: These scripts enable the splitting of the dataset into different variants and the creation of different input sequences.</li>
 
