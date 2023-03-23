@@ -4,7 +4,7 @@ This repository houses the official replication package for the paper titled "Wa
 
 <ul>
 
-<li>Dataset: We have utilized the WebAssembly (wasm) binaries compiled by <a href="https://github.com/sola-st/wasm-type-prediction">SnowWhite</a> to generate two path-based code representations. After processing the dataset using our pipeline, we have obtained a new dataset that we have used for training our models. This replication package includes both our new dataset and SnowWhite's dataset.</li>
+<li>Dataset: The dataset used in this study includes WebAssembly (wasm) binaries compiled by <a href="https://github.com/sola-st/wasm-type-prediction">SnowWhite</a>, which were used to generate two path-based code representations. The dataset was processed using our pipeline, resulting in a new dataset that we employed for training our models. This replication package comprises both our new dataset and SnowWhite's dataset.</li>
 
 <li>Pipeline: Our pipeline has been designed to extract path sequences from Wasm binaries. We implemented our pipeline using Rust and Python.</li>
 
@@ -170,7 +170,7 @@ If not, then comment this block and run the next blocks. Just remember to replac
 <h2>Models</h2>
 You can find the weights for neural models that we trained in 
 
-`./models/models.7z`. The size of the file is 4.41 MB and after decompression would be around 5.07 GB. After decompression you'd find the weights of seq2seq models for different variants and different input sequences for both method name prediction and return type recovery in `./models/method_name/` and `./models/type_pred/`. The models are generated using OpenNMT (.pt files). The naming of the file indicates the dataset variant and input variant. For method name prediction, first token is the value of m and second token is the chosen input sequence. For instance, 20_seq3.pt is when m=20 and seq3 is chosen. m is the minimum number of datapoints associated with a method name for it to be included in the dataset. For instance, if
+`./models/models.7z`. The size of the file is 4.41 GB and after decompression would be around 5.07 GB. After decompression you'd find the weights of seq2seq models for different variants and different input sequences for both method name prediction and return type recovery in `./models/method_name/` and `./models/type_pred/`. The models are generated using OpenNMT (.pt files). The naming of the file indicates the dataset variant and input variant. For method name prediction, first token is the value of m and second token is the chosen input sequence. For instance, 20_seq3.pt is when m=20 and seq3 is chosen. m is the minimum number of datapoints associated with a method name for it to be included in the dataset. For instance, if
 a dataset is created with m = 50, that means each method name in the dataset has at least 50 datapoints associated with itself. For return type recovery, first token is the variant of dataset, similar to SnowWhite and second token is the chosen input sequence. 
 
 In addition to the seq2seq weights, you'd find `./embedding.h5` which is the weights of the keras feedforward NN we used for creating code embeddings.
@@ -178,4 +178,4 @@ In addition to the seq2seq weights, you'd find `./embedding.h5` which is the wei
 <h2>Results</h2>
 You can find the results files of our evaluating our models for method name prediction and return type recovery in 
 
-`./results/method_name` and `./results/type_pred`. Each log file includes prediction accuracy scores, BLEU scores, and other evaluation metrics. We used the script provided by SnowWhite authors to generate these metrics. You can find the script at `./results/eval.py`. The naming of the file indicates the dataset variant and input variant. For method name prediction, first token is the value of m and second token is the chosen input sequence. For instance, 20_seq3.pt is when m=20 and seq3 is chosen. For return type recovery, first token is the variant of dataset, similar to SnowWhite and second token is the chosen input sequence. 
+`./results/method_name` and `./results/type_pred`. Each log file includes prediction accuracy scores, BLEU scores, and other evaluation metrics. We used the script provided by SnowWhite authors to generate these metrics. You can find the script at `./results/eval.py`. The naming of the file indicates the dataset variant and input variant. For method name prediction, first token is the value of m and second token is the chosen input sequence. For instance, 20_seq3.log is when m=20 and seq3 is chosen. For return type recovery, first token is the variant of dataset, similar to SnowWhite and second token is the chosen input sequence. 
